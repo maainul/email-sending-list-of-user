@@ -1,5 +1,5 @@
-<html>
-
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <title>Add employee</title>
 </head>
@@ -22,8 +22,7 @@
 				<td th:text="${e.emp_address}"></td>
 				<td th:text="${e.emp_email}"></td>
 				<td>
-				<a th:href="@{/sendMail/{employee_id}(id = ${e.emp_id})}">Send Mail</a>
-				
+				    <a th:href="@{/sendMail/{employee_id}(employee_id=${e.emp_id})}">Send Email</a>
 				</td>
 			</tr>
 		</tbody>
