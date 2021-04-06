@@ -294,8 +294,8 @@ public class MailConfig {
 
 		javaMailSender.setHost(host);
 		javaMailSender.setPort(port);
-		javaMailSender.setUsername("testtune4@gmail.com");
-		javaMailSender.setPassword("greenbd1");
+		javaMailSender.setUsername("your email");
+		javaMailSender.setPassword("your Password");
 		javaMailSender.setJavaMailProperties(getMailProperties());
 
 		return javaMailSender;
