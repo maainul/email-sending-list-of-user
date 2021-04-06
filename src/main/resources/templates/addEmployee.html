@@ -1,0 +1,22 @@
+<html>
+
+<head>
+<title>Add employee</title>
+</head>
+
+
+<body>
+
+	<form th:action="@{/addEmployee}" method="post" th:object="${employee}">
+
+		<label>Employee Name</label><br /> <input type="text" th:field="*{emp_name}"><br /> 
+		<label>Address</label><br />
+		<input type="text" th:field="*{emp_address}"><br /> <label>Employee Email</label><br>
+		<input type="text" th:field="*{emp_email}"><br> <input type="submit"><br>
+
+	</form>
+
+
+</body>
+
+</html>
